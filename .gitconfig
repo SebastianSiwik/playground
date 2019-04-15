@@ -1,0 +1,9 @@
+[user]
+name = Sebastian Siwik
+email = sebastian.siwik11@gmail.com
+username = SebastianSiwik
+[merge]
+tool = meld
+conflictstyle = diff3
+[mergetool "meld"]
+cmd = meld $LOCAL $BASE $REMOTE -o $MERGED -diff $BASE $LOCAL -diff $BASE $REMOTE --auto-merge
