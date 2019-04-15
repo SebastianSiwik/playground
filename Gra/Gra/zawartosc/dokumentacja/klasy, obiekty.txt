@@ -1,0 +1,105 @@
+//player.h
+
+///forward declaration
+class Graphics;
+class Level;
+
+class Player :
+	public AnimatedSprite
+{
+public:
+	Player();
+	Player(Graphics& graphics, Vector2 spawnPoint);
+	void draw(Graphics& graphics);
+	void update(float elapsedTime);
+	
+	void moveLeft();
+	void moveRight();
+	void stopMoving();
+	void lookUp();
+	void stopLookingUp();
+	void lookDown();
+	void stopLookingDown();
+	void jump();
+
+	virtual void animationDone(std::string currentAnimation);
+	virtual void setupAnimations();
+	~Player();
+
+	void handleTileCollisions(std::vector<Rect> &others);
+	void handleSlopeCollisions(std::vector<Slope> &others);
+	void handleDoorCollision(std::vector<Door> &others, Level &level, Graphics &graphics);
+	void handleEnemyCollisions(std::vector<std::shared_ptr<Enemy>> &others);
+
+	const float getX() const;
+	const float getY() const;
+
+	const inline int getMaxHealth() const { return maxHealth; }
+	const inline int getCurrentHealth() const { return currentHealth; }
+
+	void gainHealth(int amount);
+
+	void bounce();
+
+private:
+	float dx, dy;
+	Direction facing;
+	bool grounded;
+	bool lookingUp, lookingDown;
+	int maxHealth, currentHealth;
+};
+
+//player.cpp 
+
+Player::Player(Graphics& graphics, Vector2 spawnPoint) : 
+	AnimatedSprite(graphics,
+ 	"zawartosc/spritesheets/MyChar.png",
+ 	0, 0, 16, 16, spawnPoint.x, spawnPoint.y, 100), 
+	dx(0), dy(0), facing(RIGHT), grounded(false),
+	lookingDown(false), lookingUp(false), maxHealth(3), currentHealth(3)
+{
+	graphics.loadImage("zawartosc/spritesheets/MyChar.png");
+	setupAnimations();
+	playAnimation("RunRight");
+}
+
+//szablon klasy Player mieœci siê w pliku player.h
+//a jej implementacja w player.cpp
+
+//klasa Player dziedziczy z klasy AnimatedSprite
+//gdy¿ postaæ gracza jest równie¿ animowanym spritem
+
+//przyk³adem stworzenia obiektu jest inicjalizacja obiektu 
+//klasy AnimatedSprite w konstruktorze klasy Player
+
+
+
+///poruszanie siê
+void Player::moveLeft() {
+	if (lookingDown && grounded) {
+		return;
+	}
+	dx = -player_constants::WALK_SPEED;
+	if (lookingUp == false) {
+		playAnimation("RunLeft");
+	}
+	facing = LEFT;
+}
+
+void Player::moveRight() {
+	if (lookingDown && grounded) {
+		return;
+	}
+	dx = player_constants::WALK_SPEED;
+	if (lookingUp == false) {
+		playAnimation("RunRight");
+	}
+	facing = RIGHT;
+} 
+void Player::jump() {
+	if (grounded) {
+		dy = 0;
+		dy -= player_constants::JUMP_SPEED;
+		grounded = false;
+	}
+}

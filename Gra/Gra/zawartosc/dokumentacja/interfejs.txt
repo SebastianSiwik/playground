@@ -1,0 +1,64 @@
+///KLASA MENU G£ÓWNEGO GRY
+
+
+//Menu.h
+
+struct SDL_Texture;
+class Graphics;
+
+class Menu
+{
+public:
+	Menu();
+	Menu(Graphics &graphics);
+
+	void draw(Graphics &graphics);
+
+	const inline bool isVisible() const { return isUp; }
+	const inline Sprite getArrow() const { return arrow; }
+	const inline bool isSettingLevel() const { return settingLevel; }
+
+	void moveArrow(int newX, int newY);
+	void levelMenu(bool x);
+
+private:
+	SDL_Texture* backgroundTex;
+	Tile background;
+	Sprite mainMenu;
+	Sprite level;
+	Sprite arrow;
+
+	bool isUp;
+	bool settingLevel;
+};
+
+___________________________________________________________________________________________
+Menu.cpp
+
+Menu::Menu(){}
+
+Menu::Menu(Graphics &graphics): backgroundTex(SDL_CreateTextureFromSurface(graphics.getRenderer(), graphics.loadImage("zawartosc/background/bkFog.png"))),
+	background(Tile(backgroundTex, Vector2(globals::SCREEN_WIDTH/2, globals::SCREEN_HEIGHT/2), Vector2(0, 0), Vector2(0, 0))), isUp(true), settingLevel(false) {
+
+	mainMenu = Sprite(graphics, "zawartosc/spritesheets/menu.png", 0, 0, 83, 96, 250, 250);
+	level = Sprite(graphics, "zawartosc/spritesheets/menu.png", 0, 96, 51, 58, 10, 285);
+	arrow = Sprite(graphics, "zawartosc/spritesheets/menu.png", 73, 146, 16, 13, 500, 266);
+}
+
+void Menu::moveArrow(int newX, int newY) {
+	arrow.move(newX, newY);
+}
+
+void Menu::levelMenu(bool x) {
+	settingLevel = x;
+}
+
+void Menu::draw(Graphics &graphics) {
+	background.draw(graphics);
+	mainMenu.draw(graphics, mainMenu.getX(), mainMenu.getY());
+	arrow.draw(graphics, arrow.getX(), arrow.getY());
+	
+	if (settingLevel) {
+		level.draw(graphics, level.getX(), level.getY());
+	}
+}

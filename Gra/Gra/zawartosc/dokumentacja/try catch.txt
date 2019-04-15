@@ -1,0 +1,34 @@
+			int firstgid;
+			std::string source;
+			pTileset->QueryIntAttribute("firstgid", &firstgid);
+			try {
+				if (!pTileset->Attribute("source")) {
+					throw "No source attribute in tileset element";
+				}
+				source = pTileset->Attribute("source");
+				source.replace(0, 2, "zawartosc");
+				source.pop_back();
+				source.pop_back();
+				source.pop_back();
+				source.append("png");
+			}
+			catch (const char* exception) {
+				source = pTileset->FirstChildElement("image")->Attribute("source");
+				source.replace(0, 2, "zawartosc");
+			}
+
+			SDL_Texture* tex = SDL_CreateTextureFromSurface(graphics.getRenderer(), 			graphics.loadImage(source));
+			tilesets.push_back(Tileset(tex, firstgid));
+
+///The file that contains all map info can either contain the "source" attribute 
+///of a tileset in the "image" element or in the "tileset" element if it does not
+///have an "image" element. In such a case it is necessary to handle an exception, 
+///because both of these cases may happen at the same time (as they did to me).
+///If this exception is not handled, a pointer will try to access non-existing data
+
+///Plik zawieraj¹cy wszystkie informacje o mapie mo¿e zawieraæ atrybut tilesetu
+///"source" w elemencie "image" lub w elemencie "tileset" jeœli tileset nie po-
+///siada atrybutu "image". W takim wypadku trzeba obs³u¿yæ ten wyj¹tek, gdy¿
+///oba przypadki mog¹ siê wydarzyæ jednoczeœnie (tak jak w moim wypadku).
+///Nieobs³u¿ony wyj¹tek tego rodzaju skutkuje staraniem siê wskaŸnika uzyskania
+///dostêpu do nieistniej¹cych danych. 

@@ -1,0 +1,33 @@
+//przyk³adowe wykorzystania elementów biblioteki STL
+
+///Funkcje przypisuj¹ce przyciskom status wciœniêty/trzymany/puszczony
+
+	std::map<SDL_Scancode, bool> heldKeys;
+	std::map<SDL_Scancode, bool> pressedKeys;
+	std::map<SDL_Scancode, bool> releasedKeys;
+
+void Input::keyDownEvent(const SDL_Event& e) {
+pressedKeys[e.key.keysym.scancode] = true;
+heldKeys[e.key.keysym.scancode] = true;
+}
+
+void Input::keyUpEvent(const SDL_Event& e) {
+	releasedKeys[e.key.keysym.scancode] = true;
+	heldKeys[e.key.keysym.scancode] = false;
+}
+
+
+____________________________________________________________________
+
+///Funkcja dodaj¹ca animacje do obiektu
+
+std::map<std::string, std::vector<SDL_Rect>> animations;
+
+void AnimatedSprite::addAnimation(int frames, int x, int y, std::string name, int width, int height, Vector2 offset) {
+	std::vector<SDL_Rect> rectangles;
+	for (int i = 0; i < frames; i++) {
+		SDL_Rect newRect = { (x+i)*width, y, width, height };
+		rectangles.push_back(newRect);
+	}
+	animations.insert(std::pair<std::string, std::vector<SDL_Rect>>(name, rectangles));
+	offsets.insert(std::pair<std::string, Vector2>(name, offset));
