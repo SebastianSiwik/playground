@@ -1,0 +1,19 @@
+LPG;22757.38
+ON;19973.68
+ON TIR;49899.40
+Pb98;21987.60
+Pb95;33984.80
+Hot-dog;11.50
+Kanapka;14.00
+Zapiekanka;19.00
+Kawa;62.00
+Gumy do ¿ucia;233.00
+Papierosy;88.00
+Cukierki;38.00
+Czekolada;99.00
+Baton;99.00
+Czipsy;83.00
+Baterie;120.00
+Olej silnikowy;49.00
+P³yn do spryskiwaczy;65.00
+Skrobaczka;77.00

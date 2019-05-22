@@ -1,0 +1,11 @@
+﻿  Login.cpp
+  MyForm.cpp
+c:\users\strze\source\repos\sklep\sklep\MyForm.h(928): warning C4018: "<=": niezgodność typu ze znakiem/bez znaku
+c:\users\strze\source\repos\sklep\sklep\MyForm.h(1596): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt\time.h(505): note: zobacz deklarację „localtime”
+c:\users\strze\source\repos\sklep\sklep\MyForm.h(1632): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.16299.0\ucrt\time.h(505): note: zobacz deklarację „localtime”
+  MyForm1.cpp
+  Generowanie kodu...
+  .NETFramework,Version=v4.6.1.AssemblyAttributes.cpp
+  sklep.vcxproj -> C:\Users\strze\source\repos\sklep\Release\sklep.exe
