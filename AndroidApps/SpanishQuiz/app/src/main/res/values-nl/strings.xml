@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Spaans Quiz</string>
+    <string name="flag_description">de vlag van Spanje</string>
+    <string name="correct">juist!</string>
+    <string name="check">Controleren</string>
+    <string name="answer_here">Hier antwoorden</string>
+    <string name="question1">Vraag 1. Wat kan men in de afbeelding zien?</string>
+    <string name="question2">Vraag 2. Wat is de juiste vertaling van het werkwoord &quot;vissen&quot;?</string>
+    <string name="question3">Vraag 3. Hoe zeg je &quot;zwanger&quot; in het Spaans?</string>
+    <string name="question4">Vraag 4. Siete por ocho son&#8230;</string>
+    <string name="incorrect">onjuist!</string>
+    <string name="score">"Jouw score: "</string>
+</resources>

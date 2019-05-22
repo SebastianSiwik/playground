@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quiz hiszpańskiego</string>
+    <string name="flag_description">Flaga Hiszpanii</string>
+    <string name="correct">dobrze!</string>
+    <string name="check">Sprawdź</string>
+    <string name="answer_here">Odpowiedz tutaj</string>
+    <string name="question1">Pytanie 1. Co można dostrzec na zdjęciu?</string>
+    <string name="question2">Pytanie 2. Jakie jest poprawne tłumaczenie czasownika &quot;łowić ryby&quot;?</string>
+    <string name="question3">Pytanie 3. Jak jest &quot;w ciąży&quot; po hiszpańsku?</string>
+    <string name="question4">Pytanie 4. Siete por ocho son&#8230;</string>
+    <string name="incorrect">źle!</string>
+    <string name="score">"Twój wynik: "</string>
+</resources>

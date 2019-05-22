@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Тест испанского</string>
+    <string name="flag_description">Флаг Испании</string>
+    <string name="correct">правильно!</string>
+    <string name="check">Проверить</string>
+    <string name="answer_here">Ответить здесь</string>
+    <string name="question1">Вопрос 1. Что можно увидеть на этой картинке?</string>
+    <string name="question2">Вопрос 2. Каков правильный перевод глагола «ловить рыбу»?</string>
+    <string name="question3">Вопрос 3. Как сказать «беременна» на испанском?</string>
+    <string name="question4">Вопрос 4. Siete por ocho son&#8230;</string>
+    <string name="incorrect">неправильно!</string>
+    <string name="score">"Твой счёт: "</string>
+</resources>

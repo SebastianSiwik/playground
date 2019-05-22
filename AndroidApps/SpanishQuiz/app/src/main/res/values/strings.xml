@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Spanish Quiz</string>
+    <string name="flag_description">the Spanish Flag</string>
+
+    <string name="correct">correct!</string>
+    <string name="incorrect">incorrect!</string>
+    <string name="check">Check</string>
+    <string name="answer_here">Answer here</string>
+
+    <string name="question1">Question 1.\nWhat can be seen in the picture?</string>
+    <string name="question2">Question 2. What is the correct translation for the verb &quot;to fish&quot;?</string>
+    <string name="question3">Question 3.\nHow do you say &quot;pregnant&quot; in Spanish?</string>
+    <string name="question4">Question 4. Siete por ocho son...</string>
+
+    <string name="answer1_1" translatable="false">Una oreja</string>
+    <string name="answer1_2" translatable="false">Una nariz</string>
+    <string name="answer1_3" translatable="false">Dos patas</string>
+    <string name="answer1_4" translatable="false">Una cola</string>
+
+    <string name="answer2_1" translatable="false">pez</string>
+    <string name="answer2_2" translatable="false">pescar</string>
+    <string name="answer2_3" translatable="false">pescado</string>
+    <string name="answer2_4" translatable="false">empezar</string>
+
+    <string name="answer4_1" translatable="false">Uno</string>
+    <string name="answer4_2" translatable="false">Diecisiete</string>
+    <string name="answer4_3" translatable="false">Nueve octavos</string>
+    <string name="answer4_4" translatable="false">Cincuenta y seis</string>
+
+    <string name="score">Your score:</string>
+</resources>

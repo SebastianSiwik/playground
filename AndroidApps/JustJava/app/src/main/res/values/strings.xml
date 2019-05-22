@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Just Java</string>
+    <string name="jjorder">"Just Java order for "</string>
+    <string name="name">"Name: "</string>
+    <string name="addWhippedCream">\n"Add whipped cream? "</string>
+    <string name="addChocolate">\n"Add chocolate? "</string>
+    <string name="quantity">\n"Quantity: "</string>
+    <string name="total">\n"Total: $"</string>
+    <string name="thank_you">\n"Thank you!"</string>
+    <string name="too_many">You cannot have more than 100 coffees</string>
+    <string name="too_few">You cannot have less than 1 coffee</string>
+    <string name="name2">Name</string>
+    <string name="toppings">Toppings</string>
+    <string name="whipped_cream">Whipped cream</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="quantity2">Quantity</string>
+    <string name="order">Order</string>
+</resources>

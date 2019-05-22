@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sólo Java</string>
+    <string name="jjorder">"Sólo Java para "</string>
+    <string name="name">"Nombre: "</string>
+    <string name="addWhippedCream">\n"Agreuge la crema batida? "</string>
+    <string name="addChocolate">\n"Agregue el chocolate? "</string>
+    <string name="quantity">\n"Cantidad: "</string>
+    <string name="total">\n"Total: $"</string>
+    <string name="thank_you">\n¡Gracias!</string>
+    <string name="too_many">No puede pedir más que 100 cafés</string>
+    <string name="too_few">No puede pedir menos que 1 café</string>
+    <string name="name2">Nombre</string>
+    <string name="toppings">Ingredientes</string>
+    <string name="whipped_cream">Crema batida</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="quantity2">Cantidad</string>
+    <string name="order">Ordenar</string>
+</resources>

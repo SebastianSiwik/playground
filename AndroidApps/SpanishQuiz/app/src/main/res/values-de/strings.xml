@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Spanisch-Quiz</string>
+    <string name="check">Prüfen</string>
+    <string name="flag_description">die Flagge Spaniens</string>
+    <string name="correct">richtig!</string>
+    <string name="answer_here">Hier antworten</string>
+    <string name="question1">Frage 1. Was kann man auf dem Bild sehen?</string>
+    <string name="question2">Frage 2. Was ist die korrekte Übersetzung des Verbs &quot;fischen&quot;?</string>
+    <string name="question3">Frage 3. Wie sagt man &quot;schwanger&quot; auf Spanisch?</string>
+    <string name="question4">Frage 4. Siete por ocho son&#8230;</string>
+    <string name="incorrect">falsch!</string>
+    <string name="score">"Deine Punktzahl: "</string>
+</resources>
