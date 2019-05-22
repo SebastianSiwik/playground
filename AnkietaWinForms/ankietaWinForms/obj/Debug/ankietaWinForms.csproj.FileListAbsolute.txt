@@ -1,0 +1,10 @@
+C:\Users\strze\source\repos\ankietaWinForms\ankietaWinForms\bin\Debug\ankietaWinForms.exe.config
+C:\Users\strze\source\repos\ankietaWinForms\ankietaWinForms\bin\Debug\ankietaWinForms.exe
+C:\Users\strze\source\repos\ankietaWinForms\ankietaWinForms\bin\Debug\ankietaWinForms.pdb
+C:\Users\strze\source\repos\ankietaWinForms\ankietaWinForms\obj\Debug\ankietaWinForms.csprojResolveAssemblyReference.cache
+C:\Users\strze\source\repos\ankietaWinForms\ankietaWinForms\obj\Debug\ankietaWinForms.Form1.resources
+C:\Users\strze\source\repos\ankietaWinForms\ankietaWinForms\obj\Debug\ankietaWinForms.Properties.Resources.resources
+C:\Users\strze\source\repos\ankietaWinForms\ankietaWinForms\obj\Debug\ankietaWinForms.csproj.GenerateResource.cache
+C:\Users\strze\source\repos\ankietaWinForms\ankietaWinForms\obj\Debug\ankietaWinForms.csproj.CoreCompileInputs.cache
+C:\Users\strze\source\repos\ankietaWinForms\ankietaWinForms\obj\Debug\ankietaWinForms.exe
+C:\Users\strze\source\repos\ankietaWinForms\ankietaWinForms\obj\Debug\ankietaWinForms.pdb
