@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace BicycleService.Data.Sql.DAOConfigurations
 {
-    public class UserConfiguration : IEntityTypeConfiguration<User>
+    public class UserConfiguration : IEntityTypeConfiguration<DAO.User>
     {
-        public void Configure(EntityTypeBuilder<User> builder)
+        public void Configure(EntityTypeBuilder<DAO.User> builder)
         {
             builder.Property(c => c.UserName).IsRequired();
             builder.Property(c => c.UserEmail).IsRequired();

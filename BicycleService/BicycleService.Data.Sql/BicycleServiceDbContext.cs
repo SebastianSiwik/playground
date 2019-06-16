@@ -12,7 +12,7 @@ namespace BicycleService.Data.Sql
     {
         public BicycleServiceDbContext(DbContextOptions<BicycleServiceDbContext> options) : base(options) {}
 
-        public virtual DbSet<User> User { get; set; }
+        public virtual DbSet<DAO.User> User { get; set; }
         public virtual DbSet<Bicycle> Bicycle { get; set; }
         public virtual DbSet<Fault> Fault { get; set; }
         public virtual DbSet<Service> Service { get; set; }

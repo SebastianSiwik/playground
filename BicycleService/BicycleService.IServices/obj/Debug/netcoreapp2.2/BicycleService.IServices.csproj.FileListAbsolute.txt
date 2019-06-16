@@ -1,0 +1,14 @@
+F:\projekt\BicycleService\BicycleService.IServices\bin\Debug\netcoreapp2.2\BicycleService.IServices.deps.json
+F:\projekt\BicycleService\BicycleService.IServices\bin\Debug\netcoreapp2.2\BicycleService.IServices.dll
+F:\projekt\BicycleService\BicycleService.IServices\bin\Debug\netcoreapp2.2\BicycleService.IServices.pdb
+F:\projekt\BicycleService\BicycleService.IServices\bin\Debug\netcoreapp2.2\BicycleService.Common.dll
+F:\projekt\BicycleService\BicycleService.IServices\bin\Debug\netcoreapp2.2\BicycleService.Domain.dll
+F:\projekt\BicycleService\BicycleService.IServices\bin\Debug\netcoreapp2.2\BicycleService.Domain.pdb
+F:\projekt\BicycleService\BicycleService.IServices\bin\Debug\netcoreapp2.2\BicycleService.Common.pdb
+F:\projekt\BicycleService\BicycleService.IServices\obj\Debug\netcoreapp2.2\BicycleService.IServices.csprojAssemblyReference.cache
+F:\projekt\BicycleService\BicycleService.IServices\obj\Debug\netcoreapp2.2\BicycleService.IServices.csproj.CoreCompileInputs.cache
+F:\projekt\BicycleService\BicycleService.IServices\obj\Debug\netcoreapp2.2\BicycleService.IServices.AssemblyInfoInputs.cache
+F:\projekt\BicycleService\BicycleService.IServices\obj\Debug\netcoreapp2.2\BicycleService.IServices.AssemblyInfo.cs
+F:\projekt\BicycleService\BicycleService.IServices\obj\Debug\netcoreapp2.2\BicycleService.IServices.csproj.CopyComplete
+F:\projekt\BicycleService\BicycleService.IServices\obj\Debug\netcoreapp2.2\BicycleService.IServices.dll
+F:\projekt\BicycleService\BicycleService.IServices\obj\Debug\netcoreapp2.2\BicycleService.IServices.pdb

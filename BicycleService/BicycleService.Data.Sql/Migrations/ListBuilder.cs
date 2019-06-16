@@ -8,10 +8,10 @@ namespace BicycleService.Data.Sql.Migrations
 {
     public class ListBuilder
     {
-        public IEnumerable<User> BuildUserList()
+        public IEnumerable<DAO.User> BuildUserList()
         {
-            var userList = new List<User>();
-            var user = new User()
+            var userList = new List<DAO.User>();
+            var user = new DAO.User()
             {
                 UserId = 1,
                 UserName = "Sebastian",
@@ -26,7 +26,7 @@ namespace BicycleService.Data.Sql.Migrations
 
             for (int i = 2; i < 21; i++)
             {
-                var user2 = new User()
+                var user2 = new DAO.User()
                 {
                     UserId = i,
                     UserName = "User" + i,
@@ -41,7 +41,7 @@ namespace BicycleService.Data.Sql.Migrations
             }
             return userList;
         }
-        public IEnumerable<Bicycle> BuildBicycleList(IEnumerable<User> userList)
+        public IEnumerable<Bicycle> BuildBicycleList(IEnumerable<DAO.User> userList)
         {
             var bicycleList = new List<Bicycle>();
             foreach (var user in userList)
@@ -75,7 +75,7 @@ namespace BicycleService.Data.Sql.Migrations
             }
             return workshopList;
         }
-        public IEnumerable<Service> BuildServiceList(IEnumerable<User> userList)
+        public IEnumerable<Service> BuildServiceList(IEnumerable<DAO.User> userList)
         {
             var serviceList = new List<Service>();
             foreach (var user in userList)

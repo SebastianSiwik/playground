@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BicycleService.IData\BicycleService.IData.csproj" />
+    <ProjectReference Include="..\BicycleService.IServices\BicycleService.IServices.csproj" />
+  </ItemGroup>
+
+</Project>

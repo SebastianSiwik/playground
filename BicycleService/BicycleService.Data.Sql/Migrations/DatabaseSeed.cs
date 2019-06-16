@@ -1,8 +1,5 @@
 ﻿using BicycleService.Data.Sql.DAO;
-using System;
 using System.Collections.Generic;
-using BicycleService.Utils.Enums;
-using BicycleService.Utils.DoubleRandom;
 
 namespace BicycleService.Data.Sql.Migrations
 {

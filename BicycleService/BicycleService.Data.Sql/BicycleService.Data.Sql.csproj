@@ -14,7 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Utils\BicycleService.Utils.csproj" />
+    <ProjectReference Include="..\BicycleService.IData\BicycleService.IData.csproj" />
+    <ProjectReference Include="..\Utils\BicycleService.Common.csproj" />
   </ItemGroup>
 
 </Project>

@@ -8,14 +8,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace BicycleService.Api.Controllers
-{   
-    [Route("/api/v{version:apiVersion}/[controller]")]
+{
     [ApiVersion("1.0")]
-    [ApiController]
+    [Route("api/v{version:apiVersion}/user")]
     public class UserController : Controller
     {
         private readonly BicycleServiceDbContext _context;
@@ -120,7 +118,7 @@ namespace BicycleService.Api.Controllers
             var user = await _context.User.FirstOrDefaultAsync(x => x.UserId == userId);
             if (user != null)
             {
-                _context.User.Remove(user);
+                _context.Remove(user);
                 await _context.SaveChangesAsync();
             }
             return NoContent();

@@ -43,15 +43,14 @@ namespace BicycleService
                 options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
             })
             .AddFluentValidation();
-            services.AddApiVersioning(o => {
-                o.ReportApiVersions = true;
-            });
+            services.AddApiVersioning(o => o.ReportApiVersions = true);
 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseDeveloperExceptionPage();
             using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {
                 var context = serviceScope.ServiceProvider.GetRequiredService<BicycleServiceDbContext>();
