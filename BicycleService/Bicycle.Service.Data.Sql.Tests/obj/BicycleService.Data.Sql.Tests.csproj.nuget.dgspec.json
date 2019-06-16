@@ -1,0 +1,317 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\projekt\\BicycleService\\Bicycle.Service.Data.Sql.Tests\\BicycleService.Data.Sql.Tests.csproj": {}
+  },
+  "projects": {
+    "F:\\projekt\\BicycleService\\Bicycle.Service.Data.Sql.Tests\\BicycleService.Data.Sql.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\projekt\\BicycleService\\Bicycle.Service.Data.Sql.Tests\\BicycleService.Data.Sql.Tests.csproj",
+        "projectName": "BicycleService.Data.Sql.Tests",
+        "projectPath": "F:\\projekt\\BicycleService\\Bicycle.Service.Data.Sql.Tests\\BicycleService.Data.Sql.Tests.csproj",
+        "packagesPath": "C:\\Users\\Zalman\\.nuget\\packages\\",
+        "outputPath": "F:\\projekt\\BicycleService\\Bicycle.Service.Data.Sql.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Zalman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "F:\\projekt\\BicycleService\\BicycleService.Data.Sql\\BicycleService.Data.Sql.csproj": {
+                "projectPath": "F:\\projekt\\BicycleService\\BicycleService.Data.Sql\\BicycleService.Data.Sql.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.0.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "F:\\projekt\\BicycleService\\BicycleService.Data.Sql\\BicycleService.Data.Sql.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\projekt\\BicycleService\\BicycleService.Data.Sql\\BicycleService.Data.Sql.csproj",
+        "projectName": "BicycleService.Data.Sql",
+        "projectPath": "F:\\projekt\\BicycleService\\BicycleService.Data.Sql\\BicycleService.Data.Sql.csproj",
+        "packagesPath": "C:\\Users\\Zalman\\.nuget\\packages\\",
+        "outputPath": "F:\\projekt\\BicycleService\\BicycleService.Data.Sql\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Zalman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "F:\\projekt\\BicycleService\\BicycleService.IData\\BicycleService.IData.csproj": {
+                "projectPath": "F:\\projekt\\BicycleService\\BicycleService.IData\\BicycleService.IData.csproj"
+              },
+              "F:\\projekt\\BicycleService\\Utils\\BicycleService.Common.csproj": {
+                "projectPath": "F:\\projekt\\BicycleService\\Utils\\BicycleService.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.15, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "F:\\projekt\\BicycleService\\BicycleService.Domain\\BicycleService.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\projekt\\BicycleService\\BicycleService.Domain\\BicycleService.Domain.csproj",
+        "projectName": "BicycleService.Domain",
+        "projectPath": "F:\\projekt\\BicycleService\\BicycleService.Domain\\BicycleService.Domain.csproj",
+        "packagesPath": "C:\\Users\\Zalman\\.nuget\\packages\\",
+        "outputPath": "F:\\projekt\\BicycleService\\BicycleService.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Zalman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "F:\\projekt\\BicycleService\\Utils\\BicycleService.Common.csproj": {
+                "projectPath": "F:\\projekt\\BicycleService\\Utils\\BicycleService.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "F:\\projekt\\BicycleService\\BicycleService.IData\\BicycleService.IData.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\projekt\\BicycleService\\BicycleService.IData\\BicycleService.IData.csproj",
+        "projectName": "BicycleService.IData",
+        "projectPath": "F:\\projekt\\BicycleService\\BicycleService.IData\\BicycleService.IData.csproj",
+        "packagesPath": "C:\\Users\\Zalman\\.nuget\\packages\\",
+        "outputPath": "F:\\projekt\\BicycleService\\BicycleService.IData\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Zalman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "F:\\projekt\\BicycleService\\BicycleService.Domain\\BicycleService.Domain.csproj": {
+                "projectPath": "F:\\projekt\\BicycleService\\BicycleService.Domain\\BicycleService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "F:\\projekt\\BicycleService\\Utils\\BicycleService.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\projekt\\BicycleService\\Utils\\BicycleService.Common.csproj",
+        "projectName": "BicycleService.Common",
+        "projectPath": "F:\\projekt\\BicycleService\\Utils\\BicycleService.Common.csproj",
+        "packagesPath": "C:\\Users\\Zalman\\.nuget\\packages\\",
+        "outputPath": "F:\\projekt\\BicycleService\\Utils\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Zalman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.15, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace BicycleService.Data.Sql.User
 {
-    class UserRepository: IUserRepository
+    public class UserRepository: IUserRepository
     {
         private readonly BicycleServiceDbContext _context;
 
