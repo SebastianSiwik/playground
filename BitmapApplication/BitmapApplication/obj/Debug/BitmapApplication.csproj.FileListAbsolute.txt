@@ -1,0 +1,10 @@
+C:\Users\Zalman\source\repos\BitmapApplication\BitmapApplication\bin\Debug\BitmapApplication.exe.config
+C:\Users\Zalman\source\repos\BitmapApplication\BitmapApplication\bin\Debug\BitmapApplication.exe
+C:\Users\Zalman\source\repos\BitmapApplication\BitmapApplication\bin\Debug\BitmapApplication.pdb
+C:\Users\Zalman\source\repos\BitmapApplication\BitmapApplication\obj\Debug\BitmapApplication.csprojAssemblyReference.cache
+C:\Users\Zalman\source\repos\BitmapApplication\BitmapApplication\obj\Debug\BitmapApplication.Form1.resources
+C:\Users\Zalman\source\repos\BitmapApplication\BitmapApplication\obj\Debug\BitmapApplication.Properties.Resources.resources
+C:\Users\Zalman\source\repos\BitmapApplication\BitmapApplication\obj\Debug\BitmapApplication.csproj.GenerateResource.cache
+C:\Users\Zalman\source\repos\BitmapApplication\BitmapApplication\obj\Debug\BitmapApplication.csproj.CoreCompileInputs.cache
+C:\Users\Zalman\source\repos\BitmapApplication\BitmapApplication\obj\Debug\BitmapApplication.exe
+C:\Users\Zalman\source\repos\BitmapApplication\BitmapApplication\obj\Debug\BitmapApplication.pdb
