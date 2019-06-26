@@ -34,6 +34,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.mainPictureBox = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.histogramPictureBox = new System.Windows.Forms.PictureBox();
+            this.histogramButton = new System.Windows.Forms.Button();
+            this.saturationLabel = new System.Windows.Forms.Label();
+            this.saturationTrackBar = new System.Windows.Forms.TrackBar();
+            this.saturationNumber = new System.Windows.Forms.Label();
             this.hueLabel = new System.Windows.Forms.Label();
             this.hueTrackBar = new System.Windows.Forms.TrackBar();
             this.hueNumber = new System.Windows.Forms.Label();
@@ -61,14 +66,11 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zoomTrackBar = new System.Windows.Forms.TrackBar();
-            this.saturationLabel = new System.Windows.Forms.Label();
-            this.saturationTrackBar = new System.Windows.Forms.TrackBar();
-            this.saturationNumber = new System.Windows.Forms.Label();
-            this.histogramButton = new System.Windows.Forms.Button();
-            this.histogramPictureBox = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainPictureBox)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.histogramPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saturationTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hueTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.thresholdingTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sharpenTrackBar)).BeginInit();
@@ -77,8 +79,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.contrastTrackBar)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.zoomTrackBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.saturationTrackBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.histogramPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -139,6 +139,57 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(421, 423);
             this.panel2.TabIndex = 1;
+            // 
+            // histogramPictureBox
+            // 
+            this.histogramPictureBox.Location = new System.Drawing.Point(209, 144);
+            this.histogramPictureBox.Name = "histogramPictureBox";
+            this.histogramPictureBox.Size = new System.Drawing.Size(200, 100);
+            this.histogramPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.histogramPictureBox.TabIndex = 1;
+            this.histogramPictureBox.TabStop = false;
+            // 
+            // histogramButton
+            // 
+            this.histogramButton.Enabled = false;
+            this.histogramButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.histogramButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.histogramButton.Location = new System.Drawing.Point(251, 74);
+            this.histogramButton.Name = "histogramButton";
+            this.histogramButton.Size = new System.Drawing.Size(126, 30);
+            this.histogramButton.TabIndex = 23;
+            this.histogramButton.Text = "Histogram";
+            this.histogramButton.UseVisualStyleBackColor = true;
+            this.histogramButton.Click += new System.EventHandler(this.HistogramButton_Click);
+            // 
+            // saturationLabel
+            // 
+            this.saturationLabel.AutoSize = true;
+            this.saturationLabel.Location = new System.Drawing.Point(263, 311);
+            this.saturationLabel.Name = "saturationLabel";
+            this.saturationLabel.Size = new System.Drawing.Size(73, 17);
+            this.saturationLabel.TabIndex = 21;
+            this.saturationLabel.Text = "Saturation";
+            // 
+            // saturationTrackBar
+            // 
+            this.saturationTrackBar.Enabled = false;
+            this.saturationTrackBar.LargeChange = 1;
+            this.saturationTrackBar.Location = new System.Drawing.Point(209, 330);
+            this.saturationTrackBar.Maximum = 100;
+            this.saturationTrackBar.Name = "saturationTrackBar";
+            this.saturationTrackBar.Size = new System.Drawing.Size(168, 56);
+            this.saturationTrackBar.TabIndex = 20;
+            this.saturationTrackBar.Scroll += new System.EventHandler(this.SaturationTrackBar_Scroll);
+            // 
+            // saturationNumber
+            // 
+            this.saturationNumber.AutoSize = true;
+            this.saturationNumber.Location = new System.Drawing.Point(383, 330);
+            this.saturationNumber.Name = "saturationNumber";
+            this.saturationNumber.Size = new System.Drawing.Size(16, 17);
+            this.saturationNumber.TabIndex = 22;
+            this.saturationNumber.Text = "0";
             // 
             // hueLabel
             // 
@@ -362,7 +413,8 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(120, 26);
+            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.OpenToolStripMenuItem_Click_1);
             // 
@@ -370,19 +422,20 @@
             // 
             this.saveToolStripMenuItem.Enabled = false;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(120, 26);
+            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.SaveToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(117, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(213, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(120, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
@@ -397,57 +450,6 @@
             this.zoomTrackBar.TabIndex = 3;
             this.zoomTrackBar.Visible = false;
             this.zoomTrackBar.Scroll += new System.EventHandler(this.ZoomTrackBar_Scroll);
-            // 
-            // saturationLabel
-            // 
-            this.saturationLabel.AutoSize = true;
-            this.saturationLabel.Location = new System.Drawing.Point(263, 311);
-            this.saturationLabel.Name = "saturationLabel";
-            this.saturationLabel.Size = new System.Drawing.Size(73, 17);
-            this.saturationLabel.TabIndex = 21;
-            this.saturationLabel.Text = "Saturation";
-            // 
-            // saturationTrackBar
-            // 
-            this.saturationTrackBar.Enabled = false;
-            this.saturationTrackBar.LargeChange = 1;
-            this.saturationTrackBar.Location = new System.Drawing.Point(209, 330);
-            this.saturationTrackBar.Maximum = 100;
-            this.saturationTrackBar.Name = "saturationTrackBar";
-            this.saturationTrackBar.Size = new System.Drawing.Size(168, 56);
-            this.saturationTrackBar.TabIndex = 20;
-            this.saturationTrackBar.Scroll += new System.EventHandler(this.SaturationTrackBar_Scroll);
-            // 
-            // saturationNumber
-            // 
-            this.saturationNumber.AutoSize = true;
-            this.saturationNumber.Location = new System.Drawing.Point(383, 330);
-            this.saturationNumber.Name = "saturationNumber";
-            this.saturationNumber.Size = new System.Drawing.Size(16, 17);
-            this.saturationNumber.TabIndex = 22;
-            this.saturationNumber.Text = "0";
-            // 
-            // histogramButton
-            // 
-            this.histogramButton.Enabled = false;
-            this.histogramButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.histogramButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.histogramButton.Location = new System.Drawing.Point(251, 74);
-            this.histogramButton.Name = "histogramButton";
-            this.histogramButton.Size = new System.Drawing.Size(126, 30);
-            this.histogramButton.TabIndex = 23;
-            this.histogramButton.Text = "Histogram";
-            this.histogramButton.UseVisualStyleBackColor = true;
-            this.histogramButton.Click += new System.EventHandler(this.HistogramButton_Click);
-            // 
-            // histogramPictureBox
-            // 
-            this.histogramPictureBox.Location = new System.Drawing.Point(209, 144);
-            this.histogramPictureBox.Name = "histogramPictureBox";
-            this.histogramPictureBox.Size = new System.Drawing.Size(200, 100);
-            this.histogramPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.histogramPictureBox.TabIndex = 1;
-            this.histogramPictureBox.TabStop = false;
             // 
             // Form1
             // 
@@ -468,6 +470,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.mainPictureBox)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.histogramPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saturationTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hueTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.thresholdingTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sharpenTrackBar)).EndInit();
@@ -477,8 +481,6 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.zoomTrackBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.saturationTrackBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.histogramPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

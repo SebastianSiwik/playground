@@ -483,6 +483,8 @@ namespace BitmapApplication
         public Bitmap DisplayHistogram()
         {
             int[] histogram_r = new int[256];
+            int[] histogram_g = new int[256];
+            int[] histogram_b = new int[256];
             float max = 0;
 
             for (int i = 0; i < bmp.Width; i++)
@@ -496,6 +498,28 @@ namespace BitmapApplication
                 }
             }
 
+            for (int i = 0; i < bmp.Width; i++)
+            {
+                for (int j = 0; j < bmp.Height; j++)
+                {
+                    int greemValue = bmp.GetPixel(i, j).G;
+                    histogram_g[greemValue]++;
+                    if (max < histogram_g[greemValue])
+                        max = histogram_g[greemValue];
+                }
+            }
+
+            for (int i = 0; i < bmp.Width; i++)
+            {
+                for (int j = 0; j < bmp.Height; j++)
+                {
+                    int blueValue = bmp.GetPixel(i, j).B;
+                    histogram_b[blueValue]++;
+                    if (max < histogram_b[blueValue])
+                        max = histogram_b[blueValue];
+                }
+            }
+
             int histHeight = 128;
             Bitmap img = new Bitmap(256, histHeight + 10);
             using (Graphics g = Graphics.FromImage(img))
@@ -503,7 +527,17 @@ namespace BitmapApplication
                 for (int i = 0; i < histogram_r.Length; i++)
                 {
                     float pct = histogram_r[i] / max;   // What percentage of the max is this value?
-                    g.DrawLine(Pens.Black,
+                    g.DrawLine(Pens.Red,
+                        new Point(i, img.Height - 5),
+                        new Point(i, img.Height - 5 - (int)(pct * histHeight))  // Use that percentage of the height
+                        );
+                    pct = histogram_g[i] / max;
+                    g.DrawLine(Pens.Green,
+                        new Point(i, img.Height - 5),
+                        new Point(i, img.Height - 5 - (int)(pct * histHeight))  // Use that percentage of the height
+                        );
+                    pct = histogram_b[i] / max;
+                    g.DrawLine(Pens.Blue,
                         new Point(i, img.Height - 5),
                         new Point(i, img.Height - 5 - (int)(pct * histHeight))  // Use that percentage of the height
                         );
