@@ -34,34 +34,7 @@ namespace BitmapApplication
                 mainPictureBox.Width = bmp.Width;
                 mainPictureBox.Height = bmp.Height;
 
-                histogramPictureBox.Image = null;
-                saveToolStripMenuItem.Enabled = true;
-                zoomTrackBar.Enabled = true;
-                zoomTrackBar.Visible = true;
-                contrastTrackBar.Enabled = true;
-                brightnessTrackBar.Enabled = true;
-                blurTrackBar.Enabled = true;
-                sharpenTrackBar.Enabled = true;
-                thresholdingTrackBar.Enabled = true;
-                hueTrackBar.Enabled = true;
-                saturationTrackBar.Enabled = true;
-                negativeButton.Enabled = true;
-                edgeDetectionButton.Enabled = true;
-                histogramButton.Enabled = true;
-                zoomTrackBar.Value = 0;
-                contrastTrackBar.Value = 0;
-                blurTrackBar.Value = 0;
-                sharpenTrackBar.Value = 0;
-                thresholdingTrackBar.Value = 0;
-                saturationTrackBar.Value = 0;
-                hueTrackBar.Value = 0;
-                brightnessNumber.Text = "0";
-                contrastNumber.Text = "0";
-                blurNumber.Text = "0";
-                sharpenNumber.Text = "0";
-                thresholdingNumber.Text = "0";
-                hueNumber.Text = "0";
-                saturationNumber.Text = "0";
+                ResetControls();
 
                 bitmapEditor = new BitmapEditor(bmp);
             }
@@ -173,6 +146,38 @@ namespace BitmapApplication
             if (histogramPictureBox.Image is null)
                 histogramPictureBox.Image = bitmapEditor.DisplayHistogram();
             else histogramPictureBox.Image = null;
+        }
+
+        public void ResetControls()
+        {
+            histogramPictureBox.Image = null;
+            saveToolStripMenuItem.Enabled = true;
+            zoomTrackBar.Enabled = true;
+            zoomTrackBar.Visible = true;
+            contrastTrackBar.Enabled = true;
+            brightnessTrackBar.Enabled = true;
+            blurTrackBar.Enabled = true;
+            sharpenTrackBar.Enabled = true;
+            thresholdingTrackBar.Enabled = true;
+            hueTrackBar.Enabled = true;
+            saturationTrackBar.Enabled = true;
+            negativeButton.Enabled = true;
+            edgeDetectionButton.Enabled = true;
+            histogramButton.Enabled = true;
+            zoomTrackBar.Value = 0;
+            contrastTrackBar.Value = 0;
+            blurTrackBar.Value = 0;
+            sharpenTrackBar.Value = 0;
+            thresholdingTrackBar.Value = 0;
+            saturationTrackBar.Value = 0;
+            hueTrackBar.Value = 0;
+            brightnessNumber.Text = "0";
+            contrastNumber.Text = "0";
+            blurNumber.Text = "0";
+            sharpenNumber.Text = "0";
+            thresholdingNumber.Text = "0";
+            hueNumber.Text = "0";
+            saturationNumber.Text = "0";
         }
     }
 }
